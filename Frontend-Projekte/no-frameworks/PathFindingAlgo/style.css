@@ -1,0 +1,221 @@
+* {
+  box-sizing: border-box;
+  font-family: sans-serif;
+  padding: 0;
+  margin: 0;
+}
+
+body{
+  display: flex;
+  justify-content: center;
+}
+
+.title{
+  font-size: 2vw;
+  max-width: 450px;
+  text-align: center;
+  margin-top: 15vh;
+  margin-left: 20vw;
+}
+
+#content{
+  position:relative;
+}
+
+
+.header {
+  background: rgb(37, 36, 36);
+  height: 13vh;
+  width: 100vw; 
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: white;
+ }
+
+ .header-title, .header-title h1{
+  font-size: 35px;
+  margin-left: 35px;
+}
+
+.block{
+  border:1px solid #368ABB;
+  background-color:#43A4DC;
+  position:absolute;
+}
+.block:after{
+  content:no-close-quote;
+  position:absolute;
+  top:50%;
+  left:50%;
+  background: rgba(0,0,0, .6);
+  width:4px;
+  height:4px;
+  border-radius:50%;
+  margin-left:-2px;
+  margin-top:-2px;
+}
+div{
+  position: absolute;
+  background: rgb(41, 41, 41);
+  color: white;
+  display: flex;
+  align-items: center;
+  width: 42px;
+  height: 42px;
+  cursor: pointer;
+}
+
+p {
+  margin-left: 4px;
+  z-index: 3;
+}
+
+#s{
+  top: 55%;
+  left: 5%;
+}
+
+.start {
+  background: yellowgreen;
+}
+
+#a{
+  left: 20%;
+  top: 50%;
+}
+
+#sa{
+  left: 15%;
+  top: 52%;
+  position: absolute;
+}
+
+#sd{
+  top: 65%;
+  left: 15%;
+  position: absolute;
+}
+
+#ad{
+  position: absolute;
+  top: 58%;
+  left: 19%;
+}
+
+#ac{
+  position: absolute;
+  top: 56%;
+  left: 30%;
+}
+
+#ab{
+  left: 30%;
+  top: 50%;
+  position: absolute;
+}
+
+#cd{
+  top: 68%;
+  left: 30%;
+  position: absolute;
+}
+
+#cb{
+  position: absolute;
+  top: 58%;
+  left: 41.5%;
+}
+
+#sh{
+  position: absolute;
+  top: 43%;
+  left: 8%;
+}
+
+#hf{
+  position: absolute;
+  top: 35%;
+  left: 20%;
+}
+
+#fb{
+  position: absolute;
+  top: 42%;
+  left: 37%;
+}
+
+#be{
+  position: absolute;
+  top: 52%;
+  left: 45%;
+}
+
+#ce{
+  position: absolute;
+  top: 63%;
+  left: 46%;
+}
+
+#cg{
+  position: absolute;
+  top: 76%;
+  left: 36%;
+}
+
+#gd{
+  position: absolute;
+  top: 76%;
+  left: 24%;
+}
+
+#ha{
+  position: absolute;
+  top: 43%;
+  left: 18%;
+}
+
+#af{
+  position: absolute;
+  top: 45%;
+  left: 26%;
+}
+
+#b{
+  top: 50%;
+  left: 40%;
+}
+
+#c{
+  bottom: 30%;
+  left: 40%;
+}
+
+#d{
+  bottom: 30%;
+  left: 20%;
+}
+
+#e{
+  top: 55%;
+  left: 50%;
+}
+
+#f{
+  top: 35%;
+  left: 30%;
+}
+
+#g{
+  top: 80%;
+  left: 30%;
+}
+
+#h{
+  top: 35%;
+  left: 14%;
+}
+
+connection {
+  z-index: -1;
+}

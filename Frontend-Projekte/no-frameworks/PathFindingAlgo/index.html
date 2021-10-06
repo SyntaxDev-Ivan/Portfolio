@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <!--Draw arrorws Repository-->
+  <script src="frameworks/domarrow.js"></script>
+  <title>KürzesterWeg - Algorithmus</title>
+</head>
+
+<body>
+  <div class="header">
+    <span class="header-title">
+      <h1>Suchverfahren</h1>
+    </span>
+  </div>
+
+  <p class="title">Gehe über ein Element, um Die <b>schnellste Route</b> herauszufinden, oder Klicke auf ein Element um
+    den <b>Startpunkt</b> festzulegen! | Nur für Geräte mit einer Maus gedacht.</p>
+  
+  <!--Streckenkosten-->
+  <p id="sa" class="cost"></p>
+  <p id="sd" class="cost"></p>
+  <p id="ad" class="cost"></p>
+  <p id="ac" class="cost"></p>
+  <p id="ab" class="cost"></p>
+  <p id="cd" class="cost"></p>
+  <p id="cb" class="cost"></p>
+
+  <p id="sh" class="cost"></p>
+  <p id="ha" class="cost"></p>
+  <p id="af" class="cost"></p>
+  <p id="fb" class="cost"></p>
+  <p id="be" class="cost"></p>
+  <p id="ce" class="cost"></p>
+  <p id="cg" class="cost"></p>
+  <p id="gd" class="cost"></p>
+  <p id="hf" class="cost"></p>
+
+  <!--Punkte-->
+  <div class="div start" id="s">
+    <p>S</p>
+  </div>
+  <div class="div" id="a">
+    <p>A</p>
+  </div>
+  <div class="div" id="d">
+    <p>D</p>
+  </div>
+  <div class="div" id="c">
+    <p>C</p>
+  </div>
+  <div class="div" id="b">
+    <p>B</p>
+  </div>
+  <div class="div" id="e">
+    <p>E</p>
+  </div>
+  <div class="div" id="f">
+    <p>F</p>
+  </div>
+  <div class="div" id="g">
+    <p>G</p>
+  </div>
+  <div class="div" id="h">
+    <p>H</p>
+  </div>
+
+  <!--Connection-Linien-->
+
+  <connection from="#s" to="#a" color="red" class="sa"></connection>
+  <connection from="#s" to="#d" color="red" class="sd"></connection>
+  <connection from="#s" to="#h" color="red" class="sh"></connection>
+
+  <connection from="#a" to="#s" color="red" class="as"></connection>
+  <connection from="#a" to="#d" color="red" class="ad"></connection>
+  <connection from="#a" to="#c" color="red" class="ac"></connection>
+  <connection from="#a" to="#b" color="red" class="ab"></connection>
+  <connection from="#a" to="#h" color="red" class="ah"></connection>
+  <connection from="#a" to="#f" color="red" class="af"></connection>
+
+  <connection from="#d" to="#s" color="red" class="ds"></connection>
+  <connection from="#d" to="#c" color="red" class="dc"></connection>
+  <connection from="#d" to="#a" color="red" class="da"></connection>
+  <connection from="#g" to="#d" color="red" class="dg"></connection>
+
+  <connection from="#b" to="#a" color="red" class="ba"></connection>
+  <connection from="#b" to="#e" color="red" class="be"></connection>
+  <connection from="#b" to="#c" color="red" class="bc"></connection>
+  <connection from="#b" to="#f" color="red" class="bf"></connection>
+
+  <connection from="#c" to="#d" color="red" class="cd"></connection>
+  <connection from="#c" to="#e" color="red" class="ce"></connection>
+  <connection from="#c" to="#b" color="red" class="cb"></connection>
+  <connection from="#c" to="#a" color="red" class="ca"></connection>
+  <connection from="#c" to="#g" color="red" class="cg"></connection>
+
+  <connection from="#h" to="#s" color="red" class="hs"></connection>
+  <connection from="#h" to="#f" color="red" class="hf"></connection>
+  <connection from="#h" to="#a" color="red" class="ha"></connection>
+
+
+  <connection from="#e" to="#b" color="red" class="eb"></connection>
+  <connection from="#e" to="#c" color="red" class="ec"></connection>
+
+  <connection from="#g" to="#d" color="red" class="gd"></connection>
+  <connection from="#g" to="#c" color="red" class="gc"></connection>
+
+  <connection from="#f" to="#h" color="red" class="fh"></connection>
+  <connection from="#f" to="#a" color="red" class="fa"></connection>
+  <connection from="#f" to="#b" color="red" class="fb"></connection>
+
+
+  <script src="script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,129 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-size: 25px;
+  font-family: sans-serif;
+}
+
+body {
+  color: white;
+  background: #000919;
+}
+
+.logo-text {
+  text-transform: uppercase;
+  letter-spacing: 7px;
+}
+
+.header {
+  background-image: url("https://img.freepik.com/free-vector/dark-low-poly-background_1048-7971.jpg?size=626&ext=jpg");
+  height: 50vh;
+  position: absolute;
+  width: 100%;
+  z-index: -1;
+}
+.logo {
+  
+}
+.logo-text {
+  font-size: 35px; 
+}
+
+main {
+  max-width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.add {
+  width: 70vw;
+  background: #000e30;
+  display: flex;
+}
+
+.add > button {
+  width: 30%;
+  background: #182748;
+  border: none;
+  color: white;
+  cursor: pointer;
+}
+
+.addTodo {
+  background: none;
+  outline: none;
+  border: none;
+  width: 70%;
+  font-size: 20px;
+  color: white;
+  padding: 25px;
+}
+
+@media (min-width: 818px){
+  .add > button {
+    width: 20%;
+  }
+  
+  .addTodo {
+    width: 80%;
+  }
+}
+
+.inner-main{
+  display: flex;
+  flex-direction: column;
+  gap: 4vh;
+  max-width: 100vw;
+}
+
+.todos {
+  width: 70vw;
+  height: 30vh;
+  overflow: auto;
+}
+
+.todo {
+  background: #000e30;
+  width: 100%;
+ height: 70px;
+  border-bottom: 1px solid white;
+}
+
+.todo:last-child {
+  border-bottom: none;
+}
+
+.todo {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.todoInput {
+  height: 23px;
+  width: 23px;
+  background-color: #14213d;
+  border-radius: 50%;
+  margin-left: 10px;
+}
+
+.action-bar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.remove {
+  width:100%;
+  height: 100%;
+  background: #182748;
+  border: none;
+  outline: none;
+  color: white;
+  cursor: pointer;
+  padding: 10px;
+}
+
+

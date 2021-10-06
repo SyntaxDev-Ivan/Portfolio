@@ -1,0 +1,5 @@
+Falls du den Responsive Design sehen willst,
+bitte browser resizen / Untersuchen UND neuladen, ansonsten
+wird es nicht richtig angezegit, da die Animationen die Größe verändern.
+
+Lg

@@ -1,0 +1,314 @@
+/* 
+font-family: Roboto (fallback: sans-serif)
+
+Nav-color: rgb(26, 26, 26);
+body-color: rgb(50,50,50);
+
+*/
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 20px;
+    font-family: "Montserrat", "Roboto", serif;
+    color: white;
+}
+body{
+    background: rgb(50,50,50);
+    overflow-x: hidden;
+}
+html {
+    scroll-behavior: smooth;
+}
+
+nav, nav button p{
+    text-transform: uppercase;
+}
+
+.child{
+    scroll-snap-align: start;
+}
+
+.sticky{
+    position: fixed;
+    z-index: 10;
+    top: 0;
+}
+
+.flex-div{
+display: flex;
+}
+
+.nav{
+    width: 100%;
+    height: 10vh;
+    background: rgb(26, 26, 26);
+    align-items: center;
+    justify-content: flex-end;
+    top: 0;
+    z-index: 10;
+    position: fixed;
+}
+
+.nav > img{
+    width: 10%;
+    height: min(100px);
+    margin-right: auto;
+    cursor: pointer;
+}
+
+.nav > ul {
+    flex-wrap: nowrap;
+    list-style: none;
+    display: flex;
+    color: white;
+}   
+
+.nav > ul > li {
+    padding: 15px;
+}
+
+.nav > ul > li:last-child{
+    padding-right: 40px;
+}
+
+.nav a {
+margin-right: 10%;
+}
+
+.nav a button{
+    width: 100px;
+    height: 35px;
+    text-decoration: none;
+    outline: none;
+    border: none;
+    border-radius: 25px;
+    color: white;
+    background: #04AA6D;
+}
+
+.nav a button p {
+    color: rgb(70, 70, 70);
+    font-size: 20px;
+    transition: color 400ms ease-in-out;
+    color: white;
+}
+
+.nav > ul > li > a{
+    cursor: pointer;
+    transition: color 400ms ease-in-out;
+}
+
+.nav > ul > li > a:hover{
+    color: rgb(255, 0, 0)
+}
+
+.nav a button {
+    cursor: pointer;
+}
+
+
+
+.mobile-nav{
+    display:none;
+}
+
+
+@media (max-width: 650px){
+    .mobile-nav-body{
+        opacity: 0;
+        width: 100%;
+        transition: all 300ms inherit
+    }
+    
+    .active{
+        opacity: 1;
+        display: flex;
+        flex-direction: column;
+        background: rgb(26, 26, 26);
+        width: 100%;
+        color: white;
+        list-style: none;
+        transition: all 300ms ease;
+        justify-content: center;
+    }
+    .active > ul{
+        transition: all 300ms ease;
+        list-style: none;
+    }
+
+    .active > ul > li{
+        padding: 10px;
+        text-align: center;
+    }
+
+    .active > ul > li > a{
+        font-size: 25px;
+    }
+
+    .active > ul > button{
+        align-self: flex-start;
+        display: block;
+        width: 100%;
+        border: none;
+        background-color: #04AA6D;
+        padding: 14px 28px;
+        font-size: 16px;
+        cursor: pointer;
+        text-align: center;
+        color: white;
+        margin-bottom: 20px;
+    }
+
+    .nav {
+        display: none;
+    }
+    
+    .mobile-nav{
+        display: flex;
+        width: 100%;
+        height: 10vh;
+        background: rgb(26, 26, 26);
+        flex-wrap: wrap;
+    }
+    .mobile-nav > .head{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
+        height: 10vh;
+    }
+    .mobile-nav > .head > .logo {
+        width: 45%;
+        height: min(170px);
+        cursor: pointer;
+    }
+    .mobile-nav > .head > .bars-icon {
+        width: 15%;
+        margin-right: 10px;
+        margin-top: 3px;
+    }
+
+
+}
+
+/*MAIN*/
+
+
+section{
+    color: white;
+}
+.flex-row{
+    height: 90vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap-reverse;
+    justify-content: space-around;
+    scroll-snap-align: start;
+}
+
+.flex-row > .flex-item:not(:last-child){
+    display: inline;
+}
+
+.flex-row > .flex-item-1 {
+    max-width: 50%;
+}
+
+.flex-row > .flex-item-1 > h1{
+    font-size: 50px;
+}
+
+.flex-row > .flex-item-1 > p{
+    font-size: 26px
+}
+
+.flex-item-2 img{
+    width: 100%;
+    border-radius: 50%;
+}
+
+#row-2-b img{
+    width: 100%;    
+    border-radius: 0%;
+}
+
+
+@media only screen and (max-width: 850px){
+    #row-1{
+        padding-top: 11vh;
+        margin-bottom: 10px;
+      }
+    #row-2{
+        flex-direction: column;
+    }
+    .flex-row{
+        padding-top: 50px;
+        flex-direction: column-reverse;
+        justify-content: center;
+    }
+    .flex-item-2 img {
+        width: 60%;
+        padding-bottom: 20px;
+    }
+    .flex-row > .flex-item-1 {
+        max-width: 70%;
+    }
+}
+
+@media only screen and (max-width: 470px){
+    #row-2{
+        flex-direction: column;
+    }
+    .flex-row{
+        padding-top: 10px;
+        flex-direction: column-reverse;
+        justify-content: center;
+    }
+    .flex-item-2 img {
+        width: 60%;
+        padding-bottom: 20px;
+    }
+    .flex-row > .flex-item-1 {
+        max-width: 70%;
+    }
+    #row-1{
+       text-align: center;
+    }
+    #row-1 img{
+        padding-top: 10px;
+        border-radius: 0%;
+    }
+}
+
+@media only screen and (max-width: 339px){
+    body::after{
+        display: flex;
+        height: 100vh;
+        text-align: center;
+        content: "Website for this small screen not supported! Sorry, we are trying to do the website responsive as posibble. Look in a few days! Required screen-size: 340px";
+        color: white;
+        
+    }
+    .sticky{
+        display: none;
+    }
+   nav > .mobile-nav-body{
+       display: none;
+   }
+   .flex-div{
+       display: none;
+   }
+   .flex-row{
+       display: none;
+   }
+   #row-1{
+       display: none;
+   }
+}
+

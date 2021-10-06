@@ -1,0 +1,25 @@
+Sehr geehrte Leser und Leserinnen,
+
+  hier ist mein Portfolio welches in mehrern Bereichen 
+  unterteilt ist:
+    -Frontend
+      -angular
+      -no-frameworks
+      -Rest-Apis
+
+  Meine Projekte je nach dem wie Anspruchsvoll es ist(Anspruchvollste zuerst)!
+  Die anderen Projekte sind natürlich auch spannend und können angeschaut werden.
+    -Frontend
+      1.PathFindingAlgo
+      2.sortAlgorithm
+      3.Quiz 
+      4.ToDo
+      5.Notizen
+      6.Animated Homepage & Homepage
+      7.TicTacToe & Whiteboards
+
+  Alle sind selber geplant, gestaltet und entwickelt worden. Allerdings sind 
+  die Bilder meistens aus dem Internet. Viel Spaß beim anschauen.
+
+  MfG,
+  Ivan
