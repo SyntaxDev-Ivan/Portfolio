@@ -1,57 +1,50 @@
-*{
-  margin: 0;
-  padding: 0;
-  font-family: sans-serif;
-  font-size: 1.5vw;
-}
-
-.body {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 100vw;
-  box-sizing: border-box;
+* {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    font-size: 1.5vw;
+    box-sizing: border-box;
 }
 
 .header {
-  position: absolute;
-  display: flex;
-  background: rgb(35, 35, 35);
-  width: 90.5vw;
-  height: 11vh;
-  z-index: 2;
+    position: absolute;
+    display: flex;
+    background: rgb(35, 35, 35);
+    width: 91vw;
+    height: 11vh;
+    z-index: 2;
 }
 
 .settings {
-  display: flex;
-  align-items: center;
-  justify-content: space-evenly;
-  width: 90.5vw;
-  color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 100vw;
+    color: white;
 }
 
 .colors {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
 
 .black {
-  background: black;
-  width: 1.5vw;
-  height: 1.5vw;
-  margin-left: 1vw;
+    background: black;
+    width: 1.5vw;
+    height: 1.5vw;
+    margin-left: 1vw;
 }
 
 .color {
-  width: 2vw;
-  height: 2vw;
-  margin-left: 1vw;
-  cursor: pointer;
+    width: 2vw;
+    height: 2vw;
+    margin-left: 1vw;
+    cursor: pointer;
 }
 
 .red {
-  background: red;
+    background: red;
 }
 
 .green {
@@ -66,33 +59,33 @@
     background: yellow;
 }
 
-.white{
-  background: white;
+.white {
+    background: white;
 }
 
-.orange{
-  background: orange
+.orange {
+    background: orange
 }
 
-.purple{
-  background: purple;
+.purple {
+    background: purple;
 }
 
 .saddlebrown {
-  background: saddlebrown
+    background: saddlebrown
 }
 
 .size {
-  display: flex;
-  gap: 1vw;
-  align-items: center;
-  justify-content: baseline;
+    display: flex;
+    gap: 1vw;
+    align-items: center;
+    justify-content: baseline;
 }
 
 .size-input {
- width: 4vw; 
+    width: 4vw;
 }
 
-canvas{
-  cursor:crosshair
+canvas {
+    cursor: crosshair
 }

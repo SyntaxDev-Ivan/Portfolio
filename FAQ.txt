@@ -5,7 +5,7 @@ Wie öffne ich ein Projekt?
       Rest-Apis's öffnest du wie folgt:
       ---
       Hast du die Programmierumgebung VSCode herunterladen, kannst
-      du eine Extenstion: "Live Server" runterladen. Dann auf eine Html
+      du eine Extension: "Live Server" herunterladen. Dann auf eine Html
       (meistens index.html) rechtsklick und "mit Liveserver öffnen | Open with Liveserver"
       ---
       Hast du keine Programmierumgebung wie VSCode kannst du ganz normal in das Verzeichnis gehen
