@@ -1,8 +1,7 @@
 Wie öffne ich ein Projekt?
   ----------------------------------
   im Frontend
-    -no-frameworks und
-      Rest-Apis's öffnest du wie folgt:
+    -no-frameworks öffnest du wie folgt:
       ---
       Hast du die Programmierumgebung VSCode herunterladen, kannst
       du eine Extension: "Live Server" herunterladen. Dann auf eine Html
@@ -11,7 +10,7 @@ Wie öffne ich ein Projekt?
       Hast du keine Programmierumgebung wie VSCode kannst du ganz normal in das Verzeichnis gehen
       und auf die Html-Datei klicken und das Projekt wird nun mit deinem Standardbrowser geöffnet.
   ------------------------------------
-    -Angular-frameworks
+    -Angular-frameworks (noch nicht verfügbar!)
       Hier ist es ein wenig komplizierter und erfordert die ein, oder andere Installation.
       Falls du noch kein Node.js hast, muss du es ersteinmal herunterladen (nodejs.org). Hast du dies gemacht
       installierst du mit dem dazugehörigen NPM-Packet angular (npm i -g angular). Nun gehst du
@@ -21,7 +20,10 @@ Wie öffne ich ein Projekt?
       angezeigt. Diesen hängst du an dein localhost an. z.B localhost:5000 5000 = Port
   ------------------------------------
 
+<<<<<<< HEAD:FAQ - README.txt
+=======
 
+>>>>>>> 55850c34cc3f0f19e49202b66c1259de04d34752:FAQ.txt
 
 
      
