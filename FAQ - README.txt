@@ -21,9 +21,6 @@ Wie öffne ich ein Projekt?
       angezeigt. Diesen hängst du an dein localhost an. z.B localhost:5000 5000 = Port
   ------------------------------------
 
-Sind die Projekte selber entwickelt bzw programmiert & designt worden?
-   Ja, alle Projekte sind selber gemacht und kein Plagiat!
-
 
 
 
