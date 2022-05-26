@@ -1,4 +1,7 @@
 /rest_api
 rest_api
-/Angular-Framework
-Angular-Framework
+node_modules
+.env
+*/node_modules
+/node_modules
+./node_modules
