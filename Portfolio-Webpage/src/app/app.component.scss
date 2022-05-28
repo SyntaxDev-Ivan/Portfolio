@@ -2,7 +2,7 @@ body, .wrapper {
   overflow-x: hidden;
 }
 
-body, head, *, *::after, *::before{
+body, head, *{
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -121,6 +121,10 @@ i {
   transform: translateY(-35px);
 }
 
+b {
+  color: #F97119;
+}
+
 /*Rechter Teil*/
 
 .right-content {
@@ -130,4 +134,60 @@ i {
   min-height: 100vh;
   margin-left: 250px;
   padding: 20px;
+}
+
+.settings{
+  top: 40px;
+  right: 30px;
+  position: fixed;
+  .btn {
+    cursor: pointer;
+    i {
+      animation-name: rotation;
+      animation-duration: 1.6s;
+      animation-iteration-count: infinite;
+      animation-delay: 0s;
+      font-size: 26px;
+    }
+  }
+}
+
+
+
+/*Keyframes und weitere animationen*/
+
+@keyframes rotation {
+  0% {
+    transform: rotate(30deg);
+  }
+  10% {
+    transform: rotate(60deg);
+  }
+  20% {
+    transform: rotate(90deg);
+  }
+  30% {
+    transform: rotate(120deg);
+  }
+  40% {
+    transform: rotate(150deg);
+  }
+  50% {
+    transform: rotate(180deg);
+  }
+  60% {
+    transform: rotate(210deg);
+  }
+  70% {
+    transform: rotate(240deg);
+  }
+  80% {
+    transform: rotate(270deg);
+  }
+  90% {
+    transform: rotate(330deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
 }
