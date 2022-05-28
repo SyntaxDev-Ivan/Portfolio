@@ -8,16 +8,16 @@
       </div>
       <div class="mid">
         <ul class="items">
-          <li [ngClass]="{'active': ngClasses.home.active}">
+          <li [ngClass]="{'active': ngClasses.home.active}" (click)="navigateToHome()">
             <i class="fa fa-home" aria-hidden="true"></i>
             <p>Home</p>
           </li>
-          <li>
-            <i class="fa-solid fa-laptop-code" [ngClass]="{'active': ngClasses.portfolio.active}"></i>
+          <li [ngClass]="{'active': ngClasses.portfolio.active}" (click)="navigateToPortfolio()">
+            <i class="fa-solid fa-laptop-code"></i>
             <p>Portfolio</p>
           </li>
-          <li>
-            <i class="fa-solid fa-circle-user" [ngClass]="{'active': ngClasses.ich.active}"></i>
+          <li [ngClass]="{'active': ngClasses.ich.active}" (click)="navigateToIch()">
+            <i class="fa-solid fa-circle-user"></i>
             <p>Ich</p>
           </li>
           <li (click)="redirectToGithub()">
