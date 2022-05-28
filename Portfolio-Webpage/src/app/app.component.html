@@ -34,14 +34,15 @@
 
   <div class="right-content">
     <div class="settings">
-      <div class="btn">
+      <div class="btn" (click)="settingsClicked()">
         <i class="fas fa-gear "></i>
       </div>
       <div class="content">
-        <div class="colors">
+        <div class="colors" id="colors">
           <div class="color red"></div>
           <div class="color green"></div>
           <div class="color blue"></div>
+          <div class="color orange"></div>
         </div>
       </div>
     </div>

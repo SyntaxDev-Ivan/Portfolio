@@ -152,6 +152,42 @@ b {
   }
 }
 
+.settings {
+  display: flex;
+  gap: 15px;
+  align-items: center;
+  .colors {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    width: 0px;
+    height: 60px;
+    padding: 5px;
+    border-radius: 10px;
+    background: #232123;
+    transition: width ease-in-out .4s;
+  }
+  .color {
+    width: 23px;
+    height: 23px;
+    border-radius: 100%;
+    cursor: pointer;
+    &.red {
+      background: red;
+    }
+    &.green {
+      background: rgb(47, 207, 15);
+    }
+    &.blue {
+      background: rgb(28, 88, 230);
+    }
+    &.orange {
+      background: #F97119;
+    }
+  }
+}
+
 
 
 /*Keyframes und weitere animationen*/

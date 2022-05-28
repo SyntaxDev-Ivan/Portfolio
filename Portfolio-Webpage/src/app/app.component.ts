@@ -92,4 +92,20 @@ export class AppComponent {
   redirectToGithub() {
     window.open('https://github.com/ivopacak/Portfolio', '_blank')
   }
+
+  settingsClicked() {
+    let colors = document.querySelector('#colors') as HTMLElement
+    if (colors.style.width == '150px') this.colorsHidden()
+    else this.colorsVisible()
+  }
+
+  colorsVisible() {
+    let colors = document.querySelector('#colors') as HTMLElement
+    colors.style.width = '150px'
+  }
+
+  colorsHidden() {
+    let colors = document.querySelector('#colors') as HTMLElement
+    colors.style.width = '0px'
+  }
 }
