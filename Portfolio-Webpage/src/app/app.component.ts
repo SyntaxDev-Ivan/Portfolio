@@ -21,6 +21,8 @@ export class AppComponent {
     }
   }
 
+  currentTheme = '#F97119'
+
   constructor(private router: Router) {
 
   }
@@ -107,5 +109,10 @@ export class AppComponent {
   colorsHidden() {
     let colors = document.querySelector('#colors') as HTMLElement
     colors.style.width = '0px'
+  }
+
+  changeTheme(color: string) {
+    this.currentTheme = color
+    this.colorsHidden()
   }
 }

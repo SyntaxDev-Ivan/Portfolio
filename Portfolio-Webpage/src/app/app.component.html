@@ -1,4 +1,4 @@
-<div class="wrapper">
+<div class="wrapper" id="wrapper">
   <div class="sidebar menü ivan-menü dark">
     <div class="inner-content">
       <div class="top">
@@ -8,16 +8,19 @@
       </div>
       <div class="mid">
         <ul class="items">
-          <li [ngClass]="{'active': ngClasses.home.active}" (click)="navigateToHome()">
-            <i class="fa fa-home" aria-hidden="true"></i>
+          <li [ngClass]="{'active': ngClasses.home.active, 'theme-relative': true}" (click)="navigateToHome()"
+            [style.color]="ngClasses.home.active ? currentTheme : 'white'">
+            <i class="fa fa-home" aria-hidden="true" [style.color]="ngClasses.home.active ? currentTheme : 'white'"></i>
             <p>Home</p>
           </li>
-          <li [ngClass]="{'active': ngClasses.portfolio.active}" (click)="navigateToPortfolio()">
-            <i class="fa-solid fa-laptop-code"></i>
+          <li [ngClass]="{'active': ngClasses.portfolio.active, 'theme-relative': true}" (click)="navigateToPortfolio()"
+            [style.color]="ngClasses.portfolio.active ? currentTheme : 'white'">
+            <i class="fa-solid fa-laptop-code" [style.color]="ngClasses.portfolio.active ? currentTheme : 'white'"></i>
             <p>Portfolio</p>
           </li>
-          <li [ngClass]="{'active': ngClasses.ich.active}" (click)="navigateToIch()">
-            <i class="fa-solid fa-circle-user"></i>
+          <li [ngClass]="{'active': ngClasses.ich.active, 'theme-relative': true}" (click)="navigateToIch()"
+            [style.color]="ngClasses.ich.active ? currentTheme : 'white'">
+            <i class="fa-solid fa-circle-user" [style.color]="ngClasses.ich.active ? currentTheme : 'white'"></i>
             <p>Ich</p>
           </li>
           <li (click)="redirectToGithub()">
@@ -27,26 +30,27 @@
         </ul>
       </div>
       <div class="btm">
-        <p>Alle Projekte <br> im <b>Überblick!</b></p>
+        <p>Alle Projekte <br> im <b class="theme-relative" [style.color]="currentTheme">Überblick!</b></p>
       </div>
     </div>
   </div>
 
   <div class="right-content">
-    <div class="settings">
-      <div class="btn" (click)="settingsClicked()">
-        <i class="fas fa-gear "></i>
-      </div>
-      <div class="content">
-        <div class="colors" id="colors">
-          <div class="color red"></div>
-          <div class="color green"></div>
-          <div class="color blue"></div>
-          <div class="color orange"></div>
-        </div>
+    <router-outlet></router-outlet>
+  </div>
+
+  <div class="settings">
+    <div class="btn" (click)="settingsClicked()">
+      <i class="fas fa-gear "></i>
+    </div>
+    <div class="content">
+      <div class="colors" id="colors">
+        <div class="color red" (click)="changeTheme('red')"></div>
+        <div class="color green" (click)="changeTheme('rgb(47, 207, 15)')"></div>
+        <div class="color blue" (click)="changeTheme('rgb(28, 88, 230)')"></div>
+        <div class="color orange" (click)="changeTheme('#F97119')"></div>
       </div>
     </div>
-    <router-outlet></router-outlet>
   </div>
 
 </div>

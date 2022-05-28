@@ -1,3 +1,4 @@
+
 body, .wrapper {
   overflow-x: hidden;
 }
@@ -75,22 +76,10 @@ li {
   font-size: 25px;
   font-weight: 600;
   line-height: 1.7;
-  color: #fff;
   border-bottom: solid 3px #2c292c;
-
-  i {
-    color: #fff !important;
-  }
 
   img {
     width: 19px;
-  }
-
-  &.active {
-    color: #F97119;
-    i {
-      color: #F97119 !important;
-    }
   }
 
   &:nth-child(2) {
@@ -106,13 +95,6 @@ i {
 
 }
 
-.dark i {
-  color: black;
-}
-
-.light i {
-  color: white;
-}
 
 /*Btm*/
 
@@ -121,9 +103,6 @@ i {
   transform: translateY(-35px);
 }
 
-b {
-  color: #F97119;
-}
 
 /*Rechter Teil*/
 
@@ -187,7 +166,6 @@ b {
     }
   }
 }
-
 
 
 /*Keyframes und weitere animationen*/
