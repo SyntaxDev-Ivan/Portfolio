@@ -135,6 +135,19 @@ i {
   }
 }
 
+.social-media {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  position: fixed;
+  top: 50%;
+  right: 10px;
+  i {
+    font-size: 23px;
+    cursor: pointer;
+  }
+}
+
 .settings {
   display: flex;
   gap: 15px;
