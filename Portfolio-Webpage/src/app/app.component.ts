@@ -25,19 +25,19 @@ export class AppComponent {
   currentTheme = ''
 
   constructor(private router: Router, private themeGetter: ThemeGetterService) {
-
   }
 
   async ngOnInit() {
 
-    this.listenToThemeChange()
 
     await this.sleep(10)
 
+    this.listenToThemeChange()
+
     switch (this.router.url) {
       case '/':
-        this.router.navigate(['/home'])
         this.configHome()
+        this.router.navigate(['/home'])
         break
       case '/home':
         this.router.navigate(['/home'])
@@ -129,7 +129,6 @@ export class AppComponent {
   changeTheme(color: string) {
     this.themeGetter.setTheme(color)
     this.currentTheme = color
-
     // seite neu laden, damit die neue Farbe angezeigt wird
     this.reloadCurrentRoute()
     this.colorsHidden()

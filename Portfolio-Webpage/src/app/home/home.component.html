@@ -1,4 +1,31 @@
-<h1>
-  <aside [style.color]="currentTheme">Willkommen, </aside>
-  <span>ich heiße <b class="tw-target-ivan"></b></span>
-</h1>
+<div class="wrapper">
+  <h1>
+    <aside [style.color]="currentTheme">Willkommen, </aside>
+    <span>ich heiße <b class="tw-target-ivan"></b></span>
+  </h1>
+
+  <section class="mid">
+    <div class="left">
+      <pre><code [innerHtml]="code" class="language-typescript"></code></pre>
+      <a [style.color]="currentTheme" target="_blank"
+        href="https://github.com/ivopacak/Portfolio/tree/master/Frontend-Projekte/no-frameworks/sortAlgorithm">
+        Sortieralgorithmen: Auf Github ansehen
+      </a>
+    </div>
+    <div class="right">
+      <img src="../../assets/sorting-algo-laptop.png"><br>
+      <div class="buttons">
+        <div class="button">
+          <button class="mehr-erfahren" (click)="goTo('portfolio')" [style.background]="currentTheme">
+            Zum Portfolio
+          </button>
+        </div>
+        <div class="button">
+          <button class="mehr-erfahren" (click)="goTo('ich')" [style.background]="currentTheme">
+            Über mich
+          </button>
+        </div>
+      </div>
+    </div>
+  </section>
+</div>

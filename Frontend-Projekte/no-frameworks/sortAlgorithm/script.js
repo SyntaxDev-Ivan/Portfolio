@@ -36,13 +36,8 @@ async function load(algo, clearEvents) {
 
     async function bubbleSort(arr) {
         canRun = false
-            //bubblesort ist sehr langsam und man sollte ihn nur für 
-            //kleine bis mittelgroße Arrays benutzen. Ansonsten so etwas wie quicksorte!
-            //Langsamer als insertion sort da es gilt: n-i-1 oder (n^2)/2 insgesamt
-            //und insertsion sort: (n^2) / 4 insgesamt. Also doppelt so schnell.
-
-
-        //temp -> da arr[j] verändert wird, muss es davor gespeichert werden, sonst ist arr[j] & arr[j + 1] gleich
+        //Zeitliche Komplexität (n^2)/2 insgesamt
+        //und insertsion sort: (n^2) / 4 insgesamt. Also doppelt so schnell.
         let temp;
         //Von hinten vom array durchgehen
         for (var i = arr.length; i > 0; i--) {
@@ -53,19 +48,19 @@ async function load(algo, clearEvents) {
                     temp = arr[j]
                     arr[j] = arr[j + 1]
                     arr[j + 1] = temp
-                        //Warte 5ms, damit die visualisierung zu sehen ist und nicht sofort alles sortiert ist
+                    //Warte 5ms, damit die visualisierung zu sehen ist und nicht sofort alles sortiert ist
                     await sleep()
-                        //Zeige die atuellen Diagramm
+                    //Zeige die atuellen Diagramm
                     showBars(arr)
-                        //Visualisiere die grünen bars, wo wir gerade sind
+                    //Visualisiere die grünen bars, wo wir gerade sind
                     visualisation(j, "green")
                     visualisation(j + 1, "green")
-                        //und die lilanen bis wo es geht
+                    //und die lilanen bis wo es geht
                     for (var k = i - 1; k < i; k++) {
                         visualisation(k, "purple")
                     }
                     for (var e = 0; e < j; e++) {
-                        //und die roten, wo wir schon waren
+                    //und die roten, wo wir schon waren
                         visualisation(e, "red")
                     }
                 }
