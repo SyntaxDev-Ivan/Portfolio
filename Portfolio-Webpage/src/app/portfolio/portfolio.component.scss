@@ -1,0 +1,19 @@
+h1 {
+  padding-bottom: 0;
+  margin-bottom: 4px;
+}
+
+.short-line, .long-line {
+  border-radius: 2px;
+}
+
+.long-line {
+  width: 100px;
+  height: 5px;
+}
+
+.short-line {
+  margin-top: 6px;
+  width: 50px;
+  height: 5px;
+}

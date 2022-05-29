@@ -20,6 +20,7 @@
 
 code {
   height: 50vh;
+  border-radius: 15px;
   overflow: scroll;
 }
 
@@ -34,6 +35,10 @@ code {
 .right img {
   width: 56%;
   border-radius: 10px;
+  transition: all ease-in-out .3s;
+  &:hover {
+    width: calc(56% + 10px);
+  }
 }
 
 .buttons {
@@ -54,6 +59,12 @@ code {
       font-weight: bold;
       border: none;
       cursor: pointer;
+      transition: transform ease-in-out .3s;
+      box-shadow: 0 0 10px rgba(255, 255, 255, 0.2);
+      &:hover {
+        transform: translateY(-10px);
+      }
     }
+
 }
 }

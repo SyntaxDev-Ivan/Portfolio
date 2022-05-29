@@ -1,1 +1,90 @@
-<p>ich works!</p>
+<div class="wrapper">
+  <header>
+    <h1>Über mich</h1>
+    <div class="long-line" [style.background]="currentTheme"></div>
+    <div class="short-line" [style.background]="currentTheme"></div>
+  </header>
+  <div class="info">
+    <p class="fat">Ich bin <b [style.color]="currentTheme">Ivan</b></p>
+    <p>und bin ein Schüler der Walter-Mohr-Realschule in Traunreut.</p>
+  </div>
+
+  <div class="main-content">
+    <section class="lebenslauf">
+      <div class="block">
+        <p><b [style.color]="currentTheme">2014:</b> Grundschule (DE)</p>
+      </div>
+      <div class="parent">
+        <div class="connection"></div>
+      </div>
+      <div class="block">
+        <p><b [style.color]="currentTheme">2017:</b> Walter-Mohr-Realschule</p>
+      </div>
+      <div class="parent">
+        <div class="connection"></div>
+      </div>
+      <div class="block">
+        <p><b [style.color]="currentTheme">2023:</b> Mittlere Reife</p>
+      </div>
+      <div class="parent">
+        <div class="connection"></div>
+      </div>
+      <div class="block">
+        <p><b [style.color]="currentTheme">2026:</b> Fachinformatiker?</p>
+      </div>
+    </section>
+
+    <section class="skills">
+      <aside>
+        <h1>WISSEN</h1>
+      </aside>
+      <div class="main">
+        <div class="skill">
+          <div class="about-skill">
+            <p>Angular (TS)</p>
+            <p>92%</p>
+          </div>
+          <div class="bar">
+            <div class="bar-content" [style.width]="'92%'" [style.background]="currentTheme"></div>
+          </div>
+        </div>
+        <div class="skill">
+          <div class="about-skill">
+            <p>HTML, CSS (SCSS)</p>
+            <p>90%</p>
+          </div>
+          <div class="bar">
+            <div class="bar-content" [style.width]="'90%'" [style.background]="currentTheme"></div>
+          </div>
+        </div>
+        <div class="skill">
+          <div class="about-skill">
+            <p>JS, TS</p>
+            <p>70%</p>
+          </div>
+          <div class="bar">
+            <div class="bar-content" [style.width]="'70%'" [style.background]="currentTheme"></div>
+          </div>
+        </div>
+        <div class="skill">
+          <div class="about-skill">
+            <p>Node.Js</p>
+            <p>60%</p>
+          </div>
+          <div class="bar">
+            <div class="bar-content" [style.width]="'60%'" [style.background]="currentTheme"></div>
+          </div>
+        </div>
+        <div class="skill">
+          <div class="about-skill">
+            <p>Java, Python</p>
+            <p>10%</p>
+          </div>
+          <div class="bar">
+            <div class="bar-content" [style.width]="'10%'" [style.background]="currentTheme"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+</div>
