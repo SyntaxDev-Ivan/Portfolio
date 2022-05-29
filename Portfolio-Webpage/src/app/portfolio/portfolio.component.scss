@@ -71,6 +71,27 @@ main {
         font-size: 25px;
       }
     }
+    &:nth-child(3) {
+      height: 350px;
+      transform: translateY(290px);
+      .heading {
+        font-size: 25px;
+      }
+    }
+    &:nth-child(4) {
+      height: 350px;
+      transform: translateY(405px);
+      .heading {
+        font-size: 25px;
+      }
+    }
+    &:nth-child(5) {
+      height: 350px;
+      transform: translateY(520px);
+      .heading {
+        font-size: 25px;
+      }
+    }
   }
 }
 
@@ -84,6 +105,18 @@ main {
     }
     &:nth-child(2) {
       transform: translateY(380px);
+      height: 350px;
+    }
+    &:nth-child(3) {
+      transform: translateY(500px);
+      height: 350px;
+    }
+    &:nth-child(4) {
+      transform: translateY(610px);
+      height: 350px;
+    }
+    &:nth-child(5) {
+      transform: translateY(775px);
       height: 350px;
     }
   }
@@ -113,6 +146,9 @@ main {
     }
     &.super-long {
       height: 190px;
+    }
+    &.superxl-long {
+      height: 250px;
     }
   }
 
