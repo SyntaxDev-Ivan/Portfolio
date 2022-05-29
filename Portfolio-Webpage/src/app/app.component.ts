@@ -123,13 +123,14 @@ export class AppComponent {
     let currentUrl = this.router.url;
     this.router.navigateByUrl('/', { skipLocationChange: true }).then(() => {
       this.router.navigate([currentUrl]);
-      console.log(currentUrl);
     });
   }
 
   changeTheme(color: string) {
     this.themeGetter.setTheme(color)
     this.currentTheme = color
+
+    // seite neu laden, damit die neue Farbe angezeigt wird
     this.reloadCurrentRoute()
     this.colorsHidden()
   }
