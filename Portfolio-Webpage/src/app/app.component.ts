@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { Router } from '@angular/router';
+import { ThemeGetterService } from './services/theme-getter.service';
 
 @Component({
   selector: 'app-root',
@@ -23,11 +24,13 @@ export class AppComponent {
 
   currentTheme = '#F97119'
 
-  constructor(private router: Router) {
+  constructor(private router: Router, private themeGetter: ThemeGetterService) {
 
   }
 
   async ngOnInit() {
+
+    this.listenToThemeChange()
 
     await this.sleep(10)
 
@@ -55,6 +58,11 @@ export class AppComponent {
     return new Promise(resolve => setTimeout(resolve, ms))
   }
 
+  listenToThemeChange() {
+    this.themeGetter.getTheme().subscribe(theme => {
+      this.currentTheme = theme
+    })
+  }
   configHome() {
     this.deactivateActiveElements()
     this.ngClasses.home.active = true
