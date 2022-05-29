@@ -12,11 +12,12 @@ import { IchComponent } from './ich/ich.component';
     AppComponent,
     HomeComponent,
     PortfolioComponent,
-    IchComponent
+    IchComponent,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule
+
   ],
   providers: [],
   bootstrap: [AppComponent]

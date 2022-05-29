@@ -22,7 +22,7 @@ export class AppComponent {
     }
   }
 
-  currentTheme = '#F97119'
+  currentTheme = ''
 
   constructor(private router: Router, private themeGetter: ThemeGetterService) {
 
@@ -119,8 +119,18 @@ export class AppComponent {
     colors.style.width = '0px'
   }
 
+  reloadCurrentRoute() {
+    let currentUrl = this.router.url;
+    this.router.navigateByUrl('/', { skipLocationChange: true }).then(() => {
+      this.router.navigate([currentUrl]);
+      console.log(currentUrl);
+    });
+  }
+
   changeTheme(color: string) {
+    this.themeGetter.setTheme(color)
     this.currentTheme = color
+    this.reloadCurrentRoute()
     this.colorsHidden()
   }
 }
