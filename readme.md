@@ -26,8 +26,8 @@ nachdem du Node.Js installiert hast:
 cd {Pfad}
 node main.js/app.js
 ```
-Es wird auch ein Backendserver gestartet, den du nicht weiter beachten musst.
-Du musst wieder nur auf den Port von deinem Frontendserver achten und den an dein localhost anhängen.
+Es wird auch ein Backendserver gestartet. Rufe ihn auf, indem du wieder
+an dein localhost den Port anhängst
 
 ## Backend
 
