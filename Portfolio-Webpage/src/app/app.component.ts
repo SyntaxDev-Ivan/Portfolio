@@ -8,6 +8,9 @@ import { ThemeGetterService } from './services/theme-getter.service';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
+  mobileSidebarClosed = true
+  sideBarTranslation = 'translateX(0%)'
+
   title = 'Portfolio-Webpage';
 
   ngClasses = {
@@ -24,14 +27,17 @@ export class AppComponent {
 
   currentTheme = ''
 
+  projectsOpend = false
+
   constructor(private router: Router, private themeGetter: ThemeGetterService) {
   }
 
   async ngOnInit() {
 
 
-    await this.sleep(10)
+    await this.sleep(20)
 
+    this.closeMobileSidebar()
     this.listenToThemeChange()
 
     switch (this.router.url) {
@@ -51,6 +57,7 @@ export class AppComponent {
         break
       default:
         this.deactivateActiveElements()
+        this.projectsOpend = true
     }
   }
 
@@ -86,20 +93,24 @@ export class AppComponent {
 
   navigateToHome() {
     this.router.navigate(['home'])
+    this.closeMobileSidebar()
     this.configHome()
   }
 
   navigateToPortfolio() {
     this.router.navigate(['portfolio'])
+    this.closeMobileSidebar()
     this.configPortfolio()
   }
 
   navigateToIch() {
     this.router.navigate(['ich'])
+    this.closeMobileSidebar()
     this.configIch()
   }
 
   redirectToGithub() {
+    this.closeMobileSidebar()
     window.open('https://github.com/ivopacak/Portfolio', '_blank')
   }
 
@@ -132,5 +143,29 @@ export class AppComponent {
     // seite neu laden, damit die neue Farbe angezeigt wird
     this.reloadCurrentRoute()
     this.colorsHidden()
+  }
+
+  toggleMobileSidebar() {
+    if (window.innerWidth > 900) return
+    if (this.mobileSidebarClosed) this.openMobileSidebar()
+    else this.closeMobileSidebar()
+  }
+
+  openMobileSidebar() {
+    if (window.innerWidth > 900) return
+    this.sideBarTranslation = 'translateX(0%)'
+    this.mobileSidebarClosed = false
+  }
+
+  closeMobileSidebar() {
+    if (window.innerWidth > 900) return
+    this.sideBarTranslation = 'translateX(-100%)'
+    this.mobileSidebarClosed = true
+  }
+
+  onResize(ev: any) {
+    this.closeMobileSidebar()
+    this.sideBarTranslation = "0%"
+    this.mobileSidebarClosed = true
   }
 }

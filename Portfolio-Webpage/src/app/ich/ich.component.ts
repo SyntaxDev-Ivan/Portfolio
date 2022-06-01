@@ -14,6 +14,11 @@ export class IchComponent implements OnInit {
 
   ngOnInit(): void {
     this.listenToThemeChange()
+    this.scrollToTop()
+  }
+
+  scrollToTop() {
+    window.scrollTo(0, 0)
   }
 
   listenToThemeChange() {

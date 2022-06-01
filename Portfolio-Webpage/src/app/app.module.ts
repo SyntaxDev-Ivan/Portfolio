@@ -6,20 +6,28 @@ import { AppComponent } from './app.component';
 import { HomeComponent } from './home/home.component';
 import { PortfolioComponent } from './portfolio/portfolio.component';
 import { IchComponent } from './ich/ich.component';
+import { CUSTOM_ELEMENTS_SCHEMA, NO_ERRORS_SCHEMA } from '@angular/core';
+import { NgxDomarrowModule } from 'ngx-domarrow';
 
 @NgModule({
   declarations: [
     AppComponent,
     HomeComponent,
-    PortfolioComponent,
     IchComponent,
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    NgxDomarrowModule
 
   ],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
+  //create new html element schema
+  schemas: [
+    CUSTOM_ELEMENTS_SCHEMA,
+    NO_ERRORS_SCHEMA
+  ]
+
 })
 export class AppModule { }

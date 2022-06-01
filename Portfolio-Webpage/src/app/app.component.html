@@ -1,9 +1,9 @@
-<div class="wrapper" id="wrapper">
-  <div class="sidebar menü ivan-menü dark">
+<div class="wrapper" id="wrapper" *ngIf="!projectsOpend">
+  <div class="sidebar menü ivan-menü dark" [ngStyle]="{'transform': sideBarTranslation}">
     <div class="inner-content">
       <div class="top">
         <div class="img-wrapper">
-          <img src="../assets/github-laptop.png" alt="">
+          <img src="../assets/logo.png" alt="">
         </div>
       </div>
       <div class="mid">
@@ -62,6 +62,13 @@
     </a>
   </div>
 
-  <div class="mobile-open-sidebar"></div>
+  <div class="mobile-open-sidebar" (click)="toggleMobileSidebar()">
+    <i class="fa-solid fa-bars" *ngIf="mobileSidebarClosed"></i>
+    <i class="fa-solid fa-x" *ngIf="!mobileSidebarClosed"></i>
+  </div>
 
+</div>
+
+<div class="wrapper-2" *ngIf="projectsOpend">
+  <router-outlet></router-outlet>
 </div>

@@ -1,3 +1,5 @@
+$responsive-screen-width: 900px;
+
 h1 {
   padding-bottom: 0;
   margin-bottom: 4px;
@@ -25,6 +27,20 @@ main {
   margin-top: 30px;
 }
 
+.main-wrapper {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  margin-top: 30px;
+}
+
+.main-wrapper-small-devices {
+  display: none;
+  img {
+    box-shadow: 0 0 10px #fff;
+  }
+}
+
 .left, .right {
   padding: 10px;
   margin: 10px;
@@ -33,6 +49,7 @@ main {
     width: 100%;
     border-radius: 7px;
     margin-bottom: 10px;
+    box-shadow: 0 0 10px #fff;
   }
 
   p {
@@ -45,9 +62,9 @@ main {
     justify-content: center;
     flex-direction: column;
     width: 330px;
-    height: 140px;
+    height: 180px;
     background: #232123;
-    border: 15px solid #232123;
+    border: 25px solid #232123;
     border-radius: 15px;
   }
 
@@ -59,35 +76,35 @@ main {
 .left {
   .project {
     &:first-child {
-      transform: translateY(40px);
+      transform: translateY(60px);
       .heading {
         font-size: 25px;
       }
     }
     &:nth-child(2) {
       height: 350px;
-      transform: translateY(180px);
+      transform: translateY(150px);
       .heading {
         font-size: 25px;
       }
     }
     &:nth-child(3) {
       height: 350px;
-      transform: translateY(290px);
+      transform: translateY(260px);
       .heading {
         font-size: 25px;
       }
     }
     &:nth-child(4) {
       height: 350px;
-      transform: translateY(405px);
+      transform: translateY(350px);
       .heading {
         font-size: 25px;
       }
     }
     &:nth-child(5) {
       height: 350px;
-      transform: translateY(520px);
+      transform: translateY(420px);
       .heading {
         font-size: 25px;
       }
@@ -101,10 +118,10 @@ main {
   }
   .project {
     &:first-child {
-      transform: translateY(240px);
+      transform: translateY(270px);
     }
     &:nth-child(2) {
-      transform: translateY(380px);
+      transform: translateY(370px);
       height: 350px;
     }
     &:nth-child(3) {
@@ -112,11 +129,11 @@ main {
       height: 350px;
     }
     &:nth-child(4) {
-      transform: translateY(610px);
+      transform: translateY(570px);
       height: 350px;
     }
     &:nth-child(5) {
-      transform: translateY(775px);
+      transform: translateY(710px);
       height: 350px;
     }
   }
@@ -127,6 +144,7 @@ main {
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  width: 12px;
 
   h2 {
     margin: 10px;
@@ -159,5 +177,126 @@ main {
     border-radius: 50%;
     background: #2c292c;
     border: 1px solid rgb(144, 144, 144);
+  }
+}
+
+@media screen and (max-width: calc($responsive-screen-width + 370px)) {
+  header, main {
+    margin-left: 10px;
+  }
+  .mid {
+    width: 1px;
+  }
+
+  main {
+    margin: 0;
+    padding: 0;
+    margin-right: -45px;
+    .main-wrapper {
+      .project {
+        width: 275px;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: $responsive-screen-width) {
+  header, main {
+    margin-left: 10px;
+  }
+  .mid {
+    width: 1px;
+  }
+
+  .main-wrapper {
+    display: none;
+  }
+
+  .main-wrapper.main-wrapper-small-devices {
+    display: flex;
+    margin-right: 20px;
+    .mid {
+      margin: 0;
+      padding: 0;
+
+      img {
+        width: 100%;
+        border-radius: 7px;
+        margin-bottom: 10px;
+      }
+    
+      p {
+        margin: 0;
+        padding: 0;
+      }
+    
+
+      .project {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        width: 280px;
+        height: 370px;
+        padding-top: 20px;
+        padding-bottom: 20px;
+        background: #232123;
+        border: 15px solid #232123;
+        border-radius: 15px;
+        &.no-image {
+          height: 140px;
+        }
+      }
+
+      .link i{
+        padding-left: 10px;
+      }
+      
+      .heading {
+        font-size: 25px;
+      }
+    }
+  }
+ 
+}
+
+.button {
+  padding-top: 5px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 10px;
+    width: 100%;
+    height: 35px;
+    border-radius: 30px;
+    color: #fff;
+    font-size: 20px;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+    transition: transform ease-in-out .3s;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.2);
+    &:hover {
+      transform: translateY(-5px);
+    }
+  }
+
+}
+
+@media screen and (max-width: 290px) {
+  .main-wrapper.main-wrapper-small-devices {
+    .mid {
+      .project {
+        width: 250px;
+        height: 390px;
+        &.no-image {
+          height: 170px;
+        }
+      }
+
+    }
   }
 }

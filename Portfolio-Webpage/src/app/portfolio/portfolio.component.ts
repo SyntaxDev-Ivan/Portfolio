@@ -14,6 +14,11 @@ export class PortfolioComponent implements OnInit {
 
   ngOnInit(): void {
     this.listenToThemeChange()
+    this.scrollToTop()
+  }
+
+  scrollToTop() {
+    window.scrollTo(0, 0)
   }
 
   listenToThemeChange() {
@@ -22,4 +27,7 @@ export class PortfolioComponent implements OnInit {
     });
   }
 
+  open(url: any) {
+    window.open(url, '_blank');
+  }
 }

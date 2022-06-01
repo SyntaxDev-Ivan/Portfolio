@@ -113,6 +113,8 @@ async function inserationSort(arr) {
   async ngOnInit(): Promise<void> {
     await this.sleep(10)
 
+    this.scrollToTop()
+
     hljs.initHighlightingOnLoad()
     this.listenToThemeChange()
     this.animateText()
@@ -120,6 +122,10 @@ async function inserationSort(arr) {
 
   async sleep(ms: number) {
     return new Promise(resolve => setTimeout(resolve, ms));
+  }
+
+  scrollToTop() {
+    window.scrollTo(0, 0)
   }
 
   animateText() {

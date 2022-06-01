@@ -5,178 +5,420 @@
 </header>
 
 <main>
-  <div class="left">
-    <div class="project">
-      <div class="heading">
-        <b [style.color]="currentTheme">Vietwok</b>
+  <div class="main-wrapper">
+    <div class="left">
+      <div class="project no-image">
+        <div class="heading">
+          <b [style.color]="currentTheme">Vietwok</b>
+        </div>
+        <div class="text">
+          <p>ist ein Restaurant in Traunreut</p>
+          <p>Benutzt: <b [style.color]="currentTheme">Angular, NodeJs, NoSQL</b> </p>
+        </div>
+        <div class="link">
+          <a href="https://vietwok-bistro.de" target="_blank" [style.color]="currentTheme">https://vietwok-bistro.de
+            <i class="fa-solid fa-arrow-up-right-from-square" [style.color]="currentTheme"></i></a>
+        </div>
+        <div class="button">
+          <button [style.backgroundColor]="currentTheme" (click)="open('https://vietwok-bistro.de')">Live-Demo</button>
+        </div>
       </div>
-      <div class="text">
-        <p>ist ein Restaurant in Traunreut</p>
-        <p>Benutzt: <b [style.color]="currentTheme">Angular, NodeJs</b> </p>
+      <div class="project">
+        <img src="../../assets/screen-bubble-sort.png" alt="">
+        <div class="heading">
+          <b [style.color]="currentTheme">Bubble- & Insertionsort</b>
+        </div>
+        <div class="text">
+          <p>sind Sortierverfahren. Diese habe ich visualisiert!</p>
+          <p>Benutzt: <b [style.color]="currentTheme">HTML, CSS, JS</b> </p>
+        </div>
+        <div class="link">
+          <a href="https://github.com/ivopacak/Portfolio/tree/master/Frontend-Projekte/no-frameworks/sortAlgorithm"
+            target="_blank" [style.color]="currentTheme">Github (sortAlgorithm)
+            <i class="fa-solid fa-arrow-up-right-from-square" [style.color]="currentTheme"></i></a>
+        </div>
+        <div class="button">
+          <button [style.backgroundColor]="currentTheme"
+            (click)="open('https://ivan-portfolio-demo.netlify.app/sortAlgorithm')">Live-Demo</button>
+        </div>
       </div>
-      <div class="link">
-        <a href="https://vietwok-bistro.de" target="_blank" [style.color]="currentTheme">https://vietwok-bistro.de
-          <i class="fa-solid fa-arrow-up-right-from-square" [style.color]="currentTheme"></i></a>
+      <div class="project">
+        <img src="../../assets/moderne-website-screen.png" alt="">
+        <div class="heading">
+          <b [style.color]="currentTheme">moderne Webseite</b>
+        </div>
+        <div class="text">
+          <p>mit einer Zahlenanimation etc.</p>
+          <p>Benutzt: <b [style.color]="currentTheme">HTML, CSS, JS</b> </p>
+        </div>
+        <div class="link">
+          <a href="https://github.com/ivopacak/Portfolio/tree/master/Frontend-Projekte/no-frameworks/moderneWebsite"
+            target="_blank" [style.color]="currentTheme">Github (moderneWebsite)
+            <i class="fa-solid fa-arrow-up-right-from-square" [style.color]="currentTheme"></i></a>
+        </div>
+        <div class="button">
+          <button [style.backgroundColor]="currentTheme"
+            (click)="open('https://ivan-portfolio-demo.netlify.app/moderneWebsite')">Live-Demo</button>
+        </div>
+      </div>
+      <div class="project">
+        <img src="../../assets/slideshow-screen.png" alt="">
+        <div class="heading">
+          <b [style.color]="currentTheme">Slideshow</b>
+        </div>
+        <div class="text">
+          <p>mit einer smoothen Animation</p>
+          <p>Benutzt: <b [style.color]="currentTheme">HTML, CSS, JS</b> </p>
+        </div>
+        <div class="link">
+          <a href="https://github.com/ivopacak/Portfolio/tree/master/Frontend-Projekte/no-frameworks/Slideshow"
+            target="_blank" [style.color]="currentTheme">Github (Slideshow)
+            <i class="fa-solid fa-arrow-up-right-from-square" [style.color]="currentTheme"></i></a>
+        </div>
+        <div class="button">
+          <button [style.backgroundColor]="currentTheme"
+            (click)="open('https://ivan-portfolio-demo.netlify.app/Slideshow')">Live-Demo</button>
+        </div>
+      </div>
+      <div class="project">
+        <img src="../../assets/todo-screen.png" alt="">
+        <div class="heading">
+          <b [style.color]="currentTheme">ToDo</b>
+        </div>
+        <div class="text">
+          <p>Benutzt: <b [style.color]="currentTheme">HTML, CSS, JS</b> </p>
+        </div>
+        <div class="link">
+          <a href="https://github.com/ivopacak/Portfolio/tree/master/Frontend-Projekte/no-frameworks/ToDo"
+            target="_blank" [style.color]="currentTheme">Github (ToDo)
+            <i class="fa-solid fa-arrow-up-right-from-square" [style.color]="currentTheme"></i></a>
+        </div>
+        <div class="button">
+          <button [style.backgroundColor]="currentTheme"
+            (click)="open('https://ivan-portfolio-demo.netlify.app/ToDo')">Live-Demo</button>
+        </div>
       </div>
     </div>
-    <div class="project">
-      <img src="../../assets/screen-bubble-sort.png" alt="">
-      <div class="heading">
-        <b [style.color]="currentTheme">Bubble- & Insertionsort</b>
-      </div>
-      <div class="text">
-        <p>sind Sortierverfahren. Diese habe ich visualisiert!</p>
-        <p>Benutzt: <b [style.color]="currentTheme">HTML, CSS, JS</b> </p>
-      </div>
-      <div class="link">
-        <a href="https://github.com/ivopacak/Portfolio/tree/master/Frontend-Projekte/no-frameworks/sortAlgorithm"
-          target="_blank" [style.color]="currentTheme">Github (sortAlgorithm)
-          <i class="fa-solid fa-arrow-up-right-from-square" [style.color]="currentTheme"></i></a>
-      </div>
+    <div class="mid">
+      <h2>Projekte</h2>
+      <div class="line-fraction long"></div>
+      <div class="dot"></div>
+      <div class="line-fraction super-long"></div>
+      <div class="dot"></div>
+      <div class="line-fraction super-long"></div>
+      <div class="dot"></div>
+      <div class="line-fraction super-long"></div>
+      <div class="dot"></div>
+      <div class="line-fraction superxl-long"></div>
+      <div class="dot"></div>
+      <div class="line-fraction super-long"></div>
+      <div class="dot"></div>
+      <div class="line-fraction superxl-long"></div>
+      <div class="dot"></div>
+      <div class="line-fraction super-long"></div>
+      <div class="dot"></div>
+      <div class="line-fraction superxl-long"></div>
+      <div class="dot"></div>
+      <div class="line-fraction superxl-long"></div>
+      <div class="dot"></div>
+      <div class="line-fraction superxl-long"></div>
+      <div class="dot"></div>
     </div>
-    <div class="project">
-      <img src="../../assets/moderne-website-screen.png" alt="">
-      <div class="heading">
-        <b [style.color]="currentTheme">moderne Webseite</b>
+    <div class="right">
+      <div class="project no-image">
+        <div class="heading">
+          <b [style.color]="currentTheme">Dijkstra</b>
+        </div>
+        <div class="text">
+          <p>ist ein Algorithmus für das Finden von schnellsten Routen</p>
+          <p>Benutzt: <b [style.color]="currentTheme">HTML, CSS, JS</b> </p>
+        </div>
+        <div class="link">
+          <a href="https://github.com/ivopacak/Portfolio/tree/master/Frontend-Projekte/no-frameworks/PathFindingAlgo"
+            target="_blank" [style.color]="currentTheme">Github (PathFindingAlgo)
+            <i class="fa-solid fa-arrow-up-right-from-square" [style.color]="currentTheme"></i></a>
+        </div>
+        <div class="button">
+          <button [style.backgroundColor]="currentTheme"
+            (click)="open('https://ivan-portfolio-demo.netlify.app/PathFindingAlgo')">Live-Demo</button>
+        </div>
       </div>
-      <div class="text">
-        <p>mit einer Zahlenanimation etc.</p>
-        <p>Benutzt: <b [style.color]="currentTheme">HTML, CSS, JS</b> </p>
+      <div class="project">
+        <img src="../../assets/project-quiz-screen.png" alt="">
+        <div class="heading">
+          <b [style.color]="currentTheme">Quiz</b>
+        </div>
+        <div class="text">
+          <p>Eine Website, wo du dich testen kannst!</p>
+          <p>Benutzt: <b [style.color]="currentTheme">HTML, CSS, JS</b> </p>
+        </div>
+        <div class="link">
+          <a href="https://github.com/ivopacak/Portfolio/tree/master/Frontend-Projekte/no-frameworks/Quiz"
+            target="_blank" [style.color]="currentTheme">Github (Quiz)
+            <i class="fa-solid fa-arrow-up-right-from-square" [style.color]="currentTheme"></i></a>
+        </div>
+        <div class="button">
+          <button [style.backgroundColor]="currentTheme"
+            (click)="open('https://ivan-portfolio-demo.netlify.app/Quiz')">Live-Demo</button>
+        </div>
       </div>
-      <div class="link">
-        <a href="https://github.com/ivopacak/Portfolio/tree/master/Frontend-Projekte/no-frameworks/moderneWebsite"
-          target="_blank" [style.color]="currentTheme">Github (moderneWebsite)
-          <i class="fa-solid fa-arrow-up-right-from-square" [style.color]="currentTheme"></i></a>
+      <div class="project">
+        <img src="../../assets/notizen-seite-screen.png" alt="">
+        <div class="heading">
+          <b [style.color]="currentTheme">Notizen</b>
+        </div>
+        <div class="text">
+          <p>ist eine ToDo Seite.</p>
+          <p>Benutzt: <b [style.color]="currentTheme">HTML, CSS, JS</b> </p>
+        </div>
+        <div class="link">
+          <a href="https://github.com/ivopacak/Portfolio/tree/master/Frontend-Projekte/no-frameworks/Notes-Notizen"
+            target="_blank" [style.color]="currentTheme">Github (Notes-Notizen)
+            <i class="fa-solid fa-arrow-up-right-from-square" [style.color]="currentTheme"></i></a>
+        </div>
+        <div class="button">
+          <button [style.backgroundColor]="currentTheme"
+            (click)="open('https://ivan-portfolio-demo.netlify.app/Notes-Notizen')">Live-Demo</button>
+        </div>
       </div>
-    </div>
-    <div class="project">
-      <img src="../../assets/slideshow-screen.png" alt="">
-      <div class="heading">
-        <b [style.color]="currentTheme">Slideshow</b>
+      <div class="project">
+        <img src="../../assets/whiteboard-screen.png" alt="">
+        <div class="heading">
+          <b [style.color]="currentTheme">Whiteboard</b>
+        </div>
+        <div class="text">
+          <p>wo man malen kann</p>
+          <p>Benutzt: <b [style.color]="currentTheme">HTML, CSS, JS (Canvas)</b> </p>
+        </div>
+        <div class="link">
+          <a href="https://github.com/ivopacak/Portfolio/tree/master/Frontend-Projekte/no-frameworks/Whiteboard"
+            target="_blank" [style.color]="currentTheme">Github (Whiteboard)
+            <i class="fa-solid fa-arrow-up-right-from-square" [style.color]="currentTheme"></i></a>
+        </div>
+        <div class="button">
+          <button [style.backgroundColor]="currentTheme"
+            (click)="open('https://ivan-portfolio-demo.netlify.app/Whiteboard')">Live-Demo</button>
+        </div>
       </div>
-      <div class="text">
-        <p>mit einer smoothen Animation</p>
-        <p>Benutzt: <b [style.color]="currentTheme">HTML, CSS, JS</b> </p>
-      </div>
-      <div class="link">
-        <a href="https://github.com/ivopacak/Portfolio/tree/master/Frontend-Projekte/no-frameworks/Slideshow"
-          target="_blank" [style.color]="currentTheme">Github (Slideshow)
-          <i class="fa-solid fa-arrow-up-right-from-square" [style.color]="currentTheme"></i></a>
-      </div>
-    </div>
-    <div class="project">
-      <img src="../../assets/todo-screen.png" alt="">
-      <div class="heading">
-        <b [style.color]="currentTheme">ToDo</b>
-      </div>
-      <div class="text">
-        <p>Benutzt: <b [style.color]="currentTheme">HTML, CSS, JS</b> </p>
-      </div>
-      <div class="link">
-        <a href="https://github.com/ivopacak/Portfolio/tree/master/Frontend-Projekte/no-frameworks/ToDo" target="_blank"
-          [style.color]="currentTheme">Github (ToDo)
-          <i class="fa-solid fa-arrow-up-right-from-square" [style.color]="currentTheme"></i></a>
+      <div class="project">
+        <img src="../../assets/tic-tac-toe.png" alt="">
+        <div class="heading">
+          <b [style.color]="currentTheme">Tic Tac toe</b>
+        </div>
+        <div class="text">
+          <p>Benutzt: <b [style.color]="currentTheme">HTML, CSS, JS</b> </p>
+        </div>
+        <div class="link">
+          <a href="https://github.com/ivopacak/Portfolio/tree/master/Frontend-Projekte/no-frameworks/TicTacToe"
+            target="_blank" [style.color]="currentTheme">Github (TicTacToe)
+            <i class="fa-solid fa-arrow-up-right-from-square" [style.color]="currentTheme"></i></a>
+        </div>
+        <div class="button">
+          <button [style.backgroundColor]="currentTheme"
+            (click)="open('https://ivan-portfolio-demo.netlify.app/TicTacToe')">Live-Demo</button>
+        </div>
       </div>
     </div>
   </div>
-  <div class="mid">
-    <h2>Projekte</h2>
-    <div class="line-fraction short"></div>
-    <div class="dot"></div>
-    <div class="line-fraction super-long"></div>
-    <div class="dot"></div>
-    <div class="line-fraction super-long"></div>
-    <div class="dot"></div>
-    <div class="line-fraction super-long"></div>
-    <div class="dot"></div>
-    <div class="line-fraction superxl-long"></div>
-    <div class="dot"></div>
-    <div class="line-fraction super-long"></div>
-    <div class="dot"></div>
-    <div class="line-fraction superxl-long"></div>
-    <div class="dot"></div>
-    <div class="line-fraction super-long"></div>
-    <div class="dot"></div>
-    <div class="line-fraction superxl-long"></div>
-    <div class="dot"></div>
-    <div class="line-fraction superxl-long"></div>
-    <div class="dot"></div>
-    <div class="line-fraction superxl-long"></div>
-    <div class="dot"></div>
-  </div>
-  <div class="right">
-    <div class="project">
-      <div class="heading">
-        <b [style.color]="currentTheme">Dijkstra</b>
+  <div class="main-wrapper main-wrapper-small-devices">
+    <div class="mid">
+      <h2>Projekte</h2>
+      <div class="line-fraction short"></div>
+      <div class="project no-image">
+        <div class="heading">
+          <b [style.color]="currentTheme">Vietwok</b>
+        </div>
+        <div class="text">
+          <p>ist ein Restaurant in Traunreut</p>
+          <p>Benutzt: <b [style.color]="currentTheme">Angular, NodeJs, NoSQL</b> </p>
+        </div>
+        <div class="link">
+          <a href="https://vietwok-bistro.de" target="_blank" [style.color]="currentTheme">https://vietwok-bistro.de
+            <i class="fa-solid fa-arrow-up-right-from-square" [style.color]="currentTheme"></i></a>
+        </div>
+        <div class="button">
+          <button [style.backgroundColor]="currentTheme" (click)="open('https://vietwok-bistro.de')">Live-Demo</button>
+        </div>
       </div>
-      <div class="text">
-        <p>ist ein Algorithmus für das Finden von schnellsten Routen</p>
-        <p>Benutzt: <b [style.color]="currentTheme">HTML, CSS, JS</b> </p>
+      <div class="line-fraction"></div>
+      <div class="project no-image">
+        <div class="heading">
+          <b [style.color]="currentTheme">Dijkstra</b>
+        </div>
+        <div class="text">
+          <p>ist ein Algorithmus für das Finden von schnellsten Routen</p>
+          <p>Benutzt: <b [style.color]="currentTheme">HTML, CSS, JS</b> </p>
+        </div>
+        <div class="link">
+          <a href="https://github.com/ivopacak/Portfolio/tree/master/Frontend-Projekte/no-frameworks/PathFindingAlgo"
+            target="_blank" [style.color]="currentTheme">Github (PathFindingAlgo)
+            <i class="fa-solid fa-arrow-up-right-from-square" [style.color]="currentTheme"></i></a>
+        </div>
+        <div class="button">
+          <button [style.backgroundColor]="currentTheme"
+            (click)="open('https://ivan-portfolio-demo.netlify.app/PathFindingAlgo')">Live-Demo</button>
+        </div>
       </div>
-      <div class="link">
-        <a href="https://github.com/ivopacak/Portfolio/tree/master/Frontend-Projekte/no-frameworks/PathFindingAlgo"
-          target="_blank" [style.color]="currentTheme">Github (PathFindingAlgo)
-          <i class="fa-solid fa-arrow-up-right-from-square" [style.color]="currentTheme"></i></a>
+      <div class="line-fraction"></div>
+      <div class="project">
+        <img src="../../assets/screen-bubble-sort.png" alt="">
+        <div class="heading">
+          <b [style.color]="currentTheme">Bubble- & Insertionsort</b>
+        </div>
+        <div class="text">
+          <p>sind Sortierverfahren. Diese habe ich visualisiert!</p>
+          <p>Benutzt: <b [style.color]="currentTheme">HTML, CSS, JS</b> </p>
+        </div>
+        <div class="link">
+          <a href="https://github.com/ivopacak/Portfolio/tree/master/Frontend-Projekte/no-frameworks/sortAlgorithm"
+            target="_blank" [style.color]="currentTheme">Github (sortAlgorithm)
+            <i class="fa-solid fa-arrow-up-right-from-square" [style.color]="currentTheme"></i></a>
+        </div>
+        <div class="button">
+          <button [style.backgroundColor]="currentTheme"
+            (click)="open('https://ivan-portfolio-demo.netlify.app/sortAlgorithm')">Live-Demo</button>
+        </div>
       </div>
-    </div>
-    <div class="project">
-      <img src="../../assets/project-quiz-screen.png" alt="">
-      <div class="heading">
-        <b [style.color]="currentTheme">Quiz</b>
+      <div class="line-fraction"></div>
+      <div class="project">
+        <img src="../../assets/project-quiz-screen.png" alt="">
+        <div class="heading">
+          <b [style.color]="currentTheme">Quiz</b>
+        </div>
+        <div class="text">
+          <p>Eine Website, wo du dich testen kannst!</p>
+          <p>Benutzt: <b [style.color]="currentTheme">HTML, CSS, JS</b> </p>
+        </div>
+        <div class="link">
+          <a href="https://github.com/ivopacak/Portfolio/tree/master/Frontend-Projekte/no-frameworks/Quiz"
+            target="_blank" [style.color]="currentTheme">Github (Quiz)
+            <i class="fa-solid fa-arrow-up-right-from-square" [style.color]="currentTheme"></i></a>
+        </div>
+        <div class="button">
+          <button [style.backgroundColor]="currentTheme"
+            (click)="open('https://ivan-portfolio-demo.netlify.app/Quiz')">Live-Demo</button>
+        </div>
       </div>
-      <div class="text">
-        <p>Eine Website, wo du dich testen kannst!</p>
-        <p>Benutzt: <b [style.color]="currentTheme">HTML, CSS, JS</b> </p>
+      <div class="line-fraction long"></div>
+      <div class="project">
+        <img src="../../assets/moderne-website-screen.png" alt="">
+        <div class="heading">
+          <b [style.color]="currentTheme">moderne Webseite</b>
+        </div>
+        <div class="text">
+          <p>mit einer Zahlenanimation etc.</p>
+          <p>Benutzt: <b [style.color]="currentTheme">HTML, CSS, JS</b> </p>
+        </div>
+        <div class="link">
+          <a href="https://github.com/ivopacak/Portfolio/tree/master/Frontend-Projekte/no-frameworks/moderneWebsite"
+            target="_blank" [style.color]="currentTheme">Github (moderneWebsite)
+            <i class="fa-solid fa-arrow-up-right-from-square" [style.color]="currentTheme"></i></a>
+        </div>
+        <div class="button">
+          <button [style.backgroundColor]="currentTheme"
+            (click)="open('https://ivan-portfolio-demo.netlify.app/moderneWebsite')">Live-Demo</button>
+        </div>
       </div>
-      <div class="link">
-        <a href="https://github.com/ivopacak/Portfolio/tree/master/Frontend-Projekte/no-frameworks/Quiz" target="_blank"
-          [style.color]="currentTheme">Github (Quiz)
-          <i class="fa-solid fa-arrow-up-right-from-square" [style.color]="currentTheme"></i></a>
+      <div class="line-fraction"></div>
+      <div class="project">
+        <img src="../../assets/notizen-seite-screen.png" alt="">
+        <div class="heading">
+          <b [style.color]="currentTheme">Notizen</b>
+        </div>
+        <div class="text">
+          <p>ist eine ToDo Seite.</p>
+          <p>Benutzt: <b [style.color]="currentTheme">HTML, CSS, JS</b> </p>
+        </div>
+        <div class="link">
+          <a href="https://github.com/ivopacak/Portfolio/tree/master/Frontend-Projekte/no-frameworks/Notes-Notizen"
+            target="_blank" [style.color]="currentTheme">Github (Notes-Notizen)
+            <i class="fa-solid fa-arrow-up-right-from-square" [style.color]="currentTheme"></i></a>
+        </div>
+        <div class="button">
+          <button [style.backgroundColor]="currentTheme"
+            (click)="open('https://ivan-portfolio-demo.netlify.app/Notes-Notizen')">Live-Demo</button>
+        </div>
       </div>
-    </div>
-    <div class="project">
-      <img src="../../assets/notizen-seite-screen.png" alt="">
-      <div class="heading">
-        <b [style.color]="currentTheme">Notizen</b>
+      <div class="line-fraction long"></div>
+      <div class="project">
+        <img src="../../assets/slideshow-screen.png" alt="">
+        <div class="heading">
+          <b [style.color]="currentTheme">Slideshow</b>
+        </div>
+        <div class="text">
+          <p>mit einer smoothen Animation</p>
+          <p>Benutzt: <b [style.color]="currentTheme">HTML, CSS, JS</b> </p>
+        </div>
+        <div class="link">
+          <a href="https://github.com/ivopacak/Portfolio/tree/master/Frontend-Projekte/no-frameworks/Slideshow"
+            target="_blank" [style.color]="currentTheme">Github (Slideshow)
+            <i class="fa-solid fa-arrow-up-right-from-square" [style.color]="currentTheme"></i></a>
+        </div>
+        <div class="button">
+          <button [style.backgroundColor]="currentTheme"
+            (click)="open('https://ivan-portfolio-demo.netlify.app/Slideshow')">Live-Demo</button>
+        </div>
       </div>
-      <div class="text">
-        <p>ist eine ToDo Seite.</p>
-        <p>Benutzt: <b [style.color]="currentTheme">HTML, CSS, JS</b> </p>
+      <div class="line-fraction short"></div>
+      <div class="project">
+        <img src="../../assets/whiteboard-screen.png" alt="">
+        <div class="heading">
+          <b [style.color]="currentTheme">Whiteboard</b>
+        </div>
+        <div class="text">
+          <p>wo man malen kann</p>
+          <p>Benutzt: <b [style.color]="currentTheme">HTML, CSS, JS (Canvas)</b> </p>
+        </div>
+        <div class="link">
+          <a href="https://github.com/ivopacak/Portfolio/tree/master/Frontend-Projekte/no-frameworks/Whiteboard"
+            target="_blank" [style.color]="currentTheme">Github (Whiteboard)
+            <i class="fa-solid fa-arrow-up-right-from-square" [style.color]="currentTheme"></i></a>
+        </div>
+        <div class="button">
+          <button [style.backgroundColor]="currentTheme"
+            (click)="open('https://ivan-portfolio-demo.netlify.app/Whiteboard')">Live-Demo</button>
+        </div>
       </div>
-      <div class="link">
-        <a href="https://github.com/ivopacak/Portfolio/tree/master/Frontend-Projekte/no-frameworks/Notes-Notizen"
-          target="_blank" [style.color]="currentTheme">Github (Notes-Notizen)
-          <i class="fa-solid fa-arrow-up-right-from-square" [style.color]="currentTheme"></i></a>
+      <div class="line-fraction"></div>
+      <div class="project">
+        <img src="../../assets/todo-screen.png" alt="">
+        <div class="heading">
+          <b [style.color]="currentTheme">ToDo</b>
+        </div>
+        <div class="text">
+          <p>Benutzt: <b [style.color]="currentTheme">HTML, CSS, JS</b> </p>
+        </div>
+        <div class="link">
+          <a href="https://github.com/ivopacak/Portfolio/tree/master/Frontend-Projekte/no-frameworks/ToDo"
+            target="_blank" [style.color]="currentTheme">Github (ToDo)
+            <i class="fa-solid fa-arrow-up-right-from-square" [style.color]="currentTheme"></i></a>
+        </div>
+        <div class="button">
+          <button [style.backgroundColor]="currentTheme"
+            (click)="open('https://ivan-portfolio-demo.netlify.app/ToDo')">Live-Demo</button>
+        </div>
       </div>
-    </div>
-    <div class="project">
-      <img src="../../assets/whiteboard-screen.png" alt="">
-      <div class="heading">
-        <b [style.color]="currentTheme">Whiteboard</b>
+      <div class="line-fraction superxl-long"></div>
+      <div class="project">
+        <img src="../../assets/tic-tac-toe.png" alt="">
+        <div class="heading">
+          <b [style.color]="currentTheme">Tic Tac toe</b>
+        </div>
+        <div class="text">
+          <p>Benutzt: <b [style.color]="currentTheme">HTML, CSS, JS</b> </p>
+        </div>
+        <div class="link">
+          <a href="https://github.com/ivopacak/Portfolio/tree/master/Frontend-Projekte/no-frameworks/TicTacToe"
+            target="_blank" [style.color]="currentTheme">Github (TicTacToe)
+            <i class="fa-solid fa-arrow-up-right-from-square" [style.color]="currentTheme"></i></a>
+        </div>
+        <div class="button">
+          <button [style.backgroundColor]="currentTheme"
+            (click)="open('https://ivan-portfolio-demo.netlify.app/TicTacToe')">Live-Demo</button>
+        </div>
       </div>
-      <div class="text">
-        <p>wo man malen kann</p>
-        <p>Benutzt: <b [style.color]="currentTheme">HTML, CSS, JS (Canvas)</b> </p>
-      </div>
-      <div class="link">
-        <a href="https://github.com/ivopacak/Portfolio/tree/master/Frontend-Projekte/no-frameworks/Whiteboard"
-          target="_blank" [style.color]="currentTheme">Github (Whiteboard)
-          <i class="fa-solid fa-arrow-up-right-from-square" [style.color]="currentTheme"></i></a>
-      </div>
-    </div>
-    <div class="project">
-      <img src="../../assets/tic-tac-toe.png" alt="">
-      <div class="heading">
-        <b [style.color]="currentTheme">Tic Tac toe</b>
-      </div>
-      <div class="text">
-        <p>Benutzt: <b [style.color]="currentTheme">HTML, CSS, JS (Canvas)</b> </p>
-      </div>
-      <div class="link">
-        <a href="https://github.com/ivopacak/Portfolio/tree/master/Frontend-Projekte/no-frameworks/TicTacToe"
-          target="_blank" [style.color]="currentTheme">Github (TicTacToe)
-          <i class="fa-solid fa-arrow-up-right-from-square" [style.color]="currentTheme"></i></a>
-      </div>
+      <div class="line-fraction superxl-long"></div>
+      <div class="dot"></div>
     </div>
   </div>
 </main>

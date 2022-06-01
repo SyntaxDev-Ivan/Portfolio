@@ -1,6 +1,12 @@
+$responsive-screen-width: 900px;
+
 h1 {
   padding-bottom: 0;
   margin-bottom: 4px;
+}
+
+.wrapper {
+  height: 200vh;
 }
 
 .short-line, .long-line {
@@ -86,6 +92,7 @@ h1 {
   }
 }
 
+
 .lebenslauf {
   margin-top: 60px;
   .block {
@@ -109,5 +116,79 @@ h1 {
     width: 4px;
     height: 50px;
     background: rgba(255, 255, 255, 0.626);
+  }
+}
+
+@media screen and (max-width: calc($responsive-screen-width + 470px)) {
+  .main-content {
+    justify-content: center;
+  }
+  
+  .lebenslauf {
+    .block {
+      width: 300px;
+    }
+    
+    .parent {
+      width: 300px;
+    }
+  }
+  .skills {
+    margin-right: 0;
+    margin-left: 0;
+    padding: 0;
+    transform: translateX(-90px);
+    .bar {
+      width: 250px;
+    }
+  }
+}
+
+@media screen and (max-width: calc($responsive-screen-width + 150px)) {
+  header, .info {
+    padding: 20px;
+  }
+  
+  .main-content {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+  }
+  .skills {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width:20%;
+    margin: 0;
+    padding: 0;
+
+    aside {
+      h1 {
+        font-size: 45px;
+        transform: rotate(-90deg) translateY(50px) translateX(10px);
+      }
+    }
+  }
+}
+
+@media screen and (max-width: calc($responsive-screen-width - 200px)) {
+
+  .skills {
+    width: 35%;
+  }
+}
+
+@media screen and (max-width: calc($responsive-screen-width - 400px)) {
+
+  .skills {
+    width: 50%;
+  }
+}
+
+@media screen and (max-width: calc($responsive-screen-width - 500px)) {
+  .skills {
+    width: 10%;
+    transform: translateX(1px)
   }
 }
