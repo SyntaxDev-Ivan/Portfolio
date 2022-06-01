@@ -37,4 +37,8 @@ im backend Ordner NodeJs starten.
 
 ## No-Framework Projekte
 
-das Verzeichnis öffnen und Doppelklick auf die index.html Datei.
+1. Möglichkeit
+   auf ivan-opacak.me/portfolio die Live-Demo öffnen 
+   oder gleich https://ivan-portfolio-demo.netlify.app/{ProjektName von Github}
+2. Möglichkeit
+   das Verzeichnis öffnen und Doppelklick auf die index.html Datei.
