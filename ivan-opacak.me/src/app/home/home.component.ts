@@ -16,6 +16,7 @@ export class HomeComponent implements OnInit {
   currentTheme = ''
 
   targetClassForTw = '.tw-target-ivan'
+
   twOptions = {
     loop: true,
     typeColor: '#fff',
