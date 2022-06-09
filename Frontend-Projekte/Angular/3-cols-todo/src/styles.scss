@@ -2,3 +2,9 @@
 
 /* Importing Bootstrap SCSS file. */
 @import '~bootstrap/scss/bootstrap';
+
+*, div, body, html {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden
+}
