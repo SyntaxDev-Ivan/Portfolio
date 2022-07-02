@@ -11,3 +11,22 @@
 img {
   width: 25px
 }
+
+::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: #000024; 
+}
+
+
+::-webkit-scrollbar-thumb {
+  background: rgb(46, 43, 77); 
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-corner {
+  background: #000024;
+}

@@ -1,0 +1,41 @@
+$light-color: #C1C1C1;
+
+.content {
+  padding-top: 30px;
+  .top {
+    padding-left: 2px;
+    .weekday {
+      color: $light-color;
+      font-size: 25px;
+    }
+    .date {
+      color: $light-color;
+    }
+  }
+}
+
+.weather-prediction {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 200px;
+  height: 90px;
+  border-radius: 18px;
+  background: #227BCC;
+
+
+  img {
+    width: 70px;
+  }
+
+  p {
+    text-align: center;
+    padding: 0;
+    margin: 0;
+  }
+
+  p.celcius {
+    font-size: 25px;
+    text-align: center;
+  }
+}
