@@ -2,8 +2,8 @@
   <app-search-bar id="app-search-bar"></app-search-bar>
   <main>
     <app-location id="app-location"></app-location>
-    <app-weather id="app-weather"></app-weather>
-    <app-weather id="app-weather"></app-weather>
-    <app-weather id="app-weather"></app-weather>
+    <div *ngFor="let prediction of weatherPredictions">
+      <app-weather id="app-weather" [weatherData]=prediction></app-weather>
+    </div>
   </main>
 </div>

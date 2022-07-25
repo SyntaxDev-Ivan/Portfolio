@@ -1,4 +1,4 @@
-$light-color: #C1C1C1;
+$light-color: #cfcdcd;
 
 .content {
   padding-top: 30px;
@@ -10,8 +10,15 @@ $light-color: #C1C1C1;
     }
     .date {
       color: $light-color;
+      transform: translateY(-5px);
     }
   }
+}
+
+.bottom {
+  margin-top: 10px;
+  display: flex;
+  gap: 20px;
 }
 
 .weather-prediction {
@@ -22,6 +29,7 @@ $light-color: #C1C1C1;
   height: 90px;
   border-radius: 18px;
   background: #227BCC;
+  box-shadow: 0 0 15px 0 rgb(94, 87, 234);
 
 
   img {

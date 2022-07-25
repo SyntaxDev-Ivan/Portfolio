@@ -1,17 +1,17 @@
 <div class="content">
   <div class="top">
     <p class="weekday">Heute</p>
-    <p class="date">1. Juli 2022</p>
+    <p class="date">{{weatherData.date}}</p>
   </div>
   <div class="bottom">
-    <div class="weather-prediction">
+    <div class="weather-prediction" *ngFor="let thisTime of weatherData.times">
       <div class="left">
         <img src="../../assets/illustrations/sun-haze.png" alt="Weather-Illustration">
       </div>
       <div class="right">
-        <p class="time">15:00</p>
-        <p class="celcius">29°</p>
-        <p class="status">Bewölkt</p>
+        <p class="time">{{thisTime.time}}</p>
+        <p class="celcius">{{thisTime.calcius}}</p>
+        <p class="status">{{thisTime.status}}</p>
       </div>
     </div>
   </div>
